@@ -1,0 +1,39 @@
+{
+	"tabBar": {
+		"custom": true,
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"backgroundColor": "#000000",
+		"list": [
+			{
+				"pagePath": "total/search"
+			},
+			{
+				"pagePath": "total/collect"
+			},
+			{
+				"pagePath": "total/mine"
+			}
+		]
+	},
+	"pages": [
+		"total/search",
+		"total/collect",
+		"total/mine"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "MOSS",
+		"navigationBarTextStyle": "black"
+	},
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+	"van-button": "@vant/weapp/button/index",
+	"van-icon": "@vant/weapp/icon/index",
+	"van-picker": "@vant/weapp/picker/index",
+	"van-popup": "@vant/weapp/popup/index",
+	"van-nav-bar": "@vant/weapp/nav-bar/index"
+  }
+}
