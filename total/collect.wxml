@@ -1,8 +1,94 @@
-<van-nav-bar
-  title="标题"
-  left-text="返回"
-  right-text="按钮"
-  left-arrow
-  bind:click-left="onClickLeft"
-  bind:click-right="onClickRight"
-/>
+<van-dropdown-menu active-color="#07c160">
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item id="item" title="{{ itemTitle }}">
+    <van-cell title="{{ switchTitle1 }}">
+      <van-switch
+        slot="right-icon"
+        size="24px"
+        style="height: 26px"
+        checked="{{ switch1 }}"
+        active-color="#07c160"
+        bind:change="onSwitch1Change"
+      />
+    </van-cell>
+    <van-cell title="{{ switchTitle2 }}">
+      <van-switch
+        slot="right-icon"
+        size="24px"
+        style="height: 26px"
+        checked="{{ switch2 }}"
+        active-color="#07c160"
+        bind:change="onSwitch2Change"
+      />
+    </van-cell>
+    <view style="padding: 5px 16px;">
+      <van-button type="danger" block round type="primary" bind:click="onConfirm">
+        确认
+      </van-button>
+    </view>
+  </van-dropdown-item>
+</van-dropdown-menu>
+  <van-index-bar>
+        <view>
+          <van-index-anchor index="A" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+
+        <view>
+          <van-index-anchor index="B" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="C" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="D" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="E" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="F" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="G" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="H" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="I" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+        <view>
+          <van-index-anchor index="J" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+          <van-cell title="文本" />
+        </view>
+
+      </van-index-bar>
