@@ -1,0 +1,22 @@
+<view class='imagesize'>
+  <image src="image/sign.png" class='in-image'>
+  </image>
+</view>
+<view class="search">
+  <van-search value="{{ value }}" placeholder="" use-action-slot bind:change="onChange" bind:search="onSearch">
+  <view slot="action" bind:tap="onClick"><van-button size="small" round color="#07c160">搜索</van-button>
+</view>
+  
+  </van-search>
+</view>
+<view class="overall_1">
+  <van-button plain type="primary" bind:click="showPopup"><van-icon name="location-o" size="20px"/>网址导航</van-button>
+</view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+    <van-picker
+     show-toolbar
+     title="网址导航"
+     columns="{{ columns }}"
+     bind:cancel="onCancel"
+     bind:confirm="onConfirm"
+/></van-popup>

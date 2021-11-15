@@ -1,0 +1,21 @@
+page{
+  height:30%
+}
+.imagesize{
+  display:flex;
+  height: 300px;
+  justify-content: center;
+  align-items:center;
+
+}
+.overall_1{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height:200px;
+}
+.search{
+  align-items: center;
+  justify-content: center; 
+  bottom:200px;
+}
