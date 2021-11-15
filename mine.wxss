@@ -1,0 +1,25 @@
+.overall_1{
+    display:flex;
+    justify-content: center;
+}
+.overall_2{
+    display:flex;
+    justify-content: center;
+    height:30px;
+}
+.space{
+    height:50px;
+}
+.cell{
+    height:100px;
+}
+page{
+    background-color: #EDEDED;
+}
+.share{
+    height:200px;
+}
+.exit{
+    display:flex;
+    justify-content: center;
+}
