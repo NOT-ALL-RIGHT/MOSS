@@ -1,0 +1,6 @@
+<form bindsubmit="formSubmit">
+  <van-cell-group>
+    <van-field value="{{ message }}" left-icon="comment-o" label="建议" type="textarea" placeholder="请留下您宝贵的建议,我们会努力改进的" autosize clearable="true" border="{{ false }}" show-word-limit="true" maxlength="300" disabled="{{modalName!=null}}" bindinput="textareaAInput"/>
+  </van-cell-group>
+  <van-button type="primary" size="large" form-type="submit">提交</van-button>
+</form>

@@ -1,0 +1,6 @@
+page{
+    background-color: #EDEDED
+}
+.button{
+    justify-content: center;
+}
