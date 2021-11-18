@@ -16,7 +16,7 @@
 page{
     background-color: #EDEDED;
 }
-.share{
+.group{
     height:200px;
 }
 .exit{
