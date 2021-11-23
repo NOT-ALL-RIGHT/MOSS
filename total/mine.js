@@ -9,7 +9,8 @@ Page({
       { name: '复制链接', icon: 'link' },
       { name: '分享海报', icon: 'poster' },
       { name: '二维码', icon: 'qrcode' },
-    ],
+	],
+	userInfo:'',
   },
 
 	onShow() {
@@ -39,5 +40,22 @@ Page({
 		Toast(event.detail.name);
 		this.onClose();
 	  },
+	  login(){
+		console.log('点击实现')
+		wx.getUserProfile({
+		  desc: '必须授权',
+		  success:res=>{
+			let user =res.userInfo
+			console.log("用户信息")
+			this.setData({
+			  userInfo:user
+			})
+			
+		  },
+		  fail(){
+			console.log('授权失败')
+		  }
+		})
+	  }
 })
 

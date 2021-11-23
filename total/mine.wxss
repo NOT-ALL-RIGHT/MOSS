@@ -1,6 +1,8 @@
+/**index.wxss**/
 .overall_1{
     display:flex;
     justify-content: center;
+    height:200px;
 }
 .overall_2{
     display:flex;
@@ -23,3 +25,32 @@ page{
     display:flex;
     justify-content: center;
 }
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.touxiang{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-top: 30rpx;
+    margin-bottom: 10rpx;
+}
+.btnborder{
+    border: none;
+    background-color: #EDEDED;
+}
+button{
+    padding: 0;
+    background-color: transparent;   /*按钮透明*/  
+    border:none;				/*设置按钮边框*/
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top:20px;
+  }
+  button image{
+    width: 200rpx;
+    height: 200rpx;
+  }

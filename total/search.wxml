@@ -4,9 +4,10 @@
 </view>
 <view class="search">
   <van-search value="{{ value }}" placeholder="" use-action-slot bind:change="onChange" bind:search="onSearch">
-  <view slot="action" bind:tap="onClick"><van-button size="small" round color="#07c160">搜索</van-button>
+  <view slot="action"><van-button size="small" round color="#07c160" bind:click="onClick">搜索</van-button>
+  <van-dialog id="van-dialog"></van-dialog>
 </view>
-  
+
   </van-search>
 </view>
 <view class="overall_1">

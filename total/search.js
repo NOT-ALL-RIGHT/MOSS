@@ -1,30 +1,42 @@
+wx.cloud.init()
+var db=wx.cloud.database()
 const app = getApp()
-import Toast from '../miniprogram_npm/@vant/weapp/toast/toast'
+import Toast from '../miniprogram_npm/@vant/weapp/toast/toast';
+import Dialog from '../miniprogram_npm/@vant/weapp/dialog/dialog'
 Page({
 	data: {
 		value: '',
 		show: false,
-		columns: ['CSDN', 'Github']
+		columns: ['CSDN'],
+		getdata: " "
 	  },
 	  onChange(e) {
 		this.setData({
 		  value: e.detail,
 		});
+		db.collection("C_function").doc(this.data.value).get({
+			success: res=>{
+				console.log(res)
+				this.setData({
+					getdata:res.data
+				})
+			}
+		})
 	  },
 	  onSearch() {
 		Toast('搜索' + this.data.value);
+		
 	  },
-	  onClick() {
-		Toast('搜索' + this.data.value);
-	  },
+
 
 	onShow() {
 		this.getTabBar().init();
 	},
 
 	onConfirm(event) {
-		const { picker, value, index } = event.detail;
-		Toast(`当前值：${value}, 当前索引：${index}`);
+		wx.navigateTo({
+		  url: '../total/csdn/csdn',
+		})
 	  },
 	
 	  showPopup() {
@@ -34,6 +46,21 @@ Page({
 	  onClose() {
 		this.setData({ show: false });
 	  },
+	  onClick() {
+        Dialog.alert({
+          title: this.data.value,
+		  message: this.data.getdata.USE,
+        }).then(() => {
+          // on close
+        });
+	},
+	getUserInfo(event) {
+		console.log(event.detail);
+	  },
+
+	
+	
+
 	
 })
 
