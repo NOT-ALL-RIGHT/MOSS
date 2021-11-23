@@ -1,2 +1,12 @@
 2021/11/13  	"search"page finish! NOT CONNECTED
 2021/11/14	"collect"page finish! NOT CONNECTED
+2021/11/15	"mine" 50%
+2021/11/16	"mine"page finish! NOT CONNECTED
+2021/11/17	"share""suggest"function finish in "mine"
+2021/11/18	GIVE UP "collect"
+2021/11/19	floating window finish!
+2021/11/20	add "C++" function to cloud database 50%
+2021/11/21	add "C++" function to cloud database 100%
+2021/11/22	authorization finish!
+		"search" function work! 
+		Connect to cloud database.
